@@ -1,0 +1,88 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328PB"</DEVICE>
+ <WORKING_DIR>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328PBdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pbdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\Debug\zegar_szachy.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>zegar_szachy.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>zegar_szachy.map</FILE>
+  <FILE>zegar_szachy.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <prime><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>3</LINE></prime>
+  <delay1><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>8</LINE></delay1>
+  <player><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>9</LINE></player>
+  <endtime><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>10</LINE></endtime>
+  <status><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>11</LINE></status>
+  <minutes><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>12</LINE></minutes>
+  <seconds><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>13</LINE></seconds>
+  <begin><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>24</LINE></begin>
+  <keypad_ISR><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>102</LINE></keypad_ISR>
+  <loop><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>92</LINE></loop>
+  <math><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>347</LINE></math>
+  <display><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>447</LINE></display>
+  <start><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>136</LINE></start>
+  <pause><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>151</LINE></pause>
+  <start_return><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>167</LINE></start_return>
+  <start_zero><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>163</LINE></start_zero>
+  <start_one><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>158</LINE></start_one>
+  <switch><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>179</LINE></switch>
+  <s_player1><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>198</LINE></s_player1>
+  <s_player2><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>203</LINE></s_player2>
+  <s_return><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>208</LINE></s_return>
+  <keypad><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>220</LINE></keypad>
+  <k_minutes><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>247</LINE></k_minutes>
+  <k_seconds><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>259</LINE></k_seconds>
+  <k_second><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>271</LINE></k_second>
+  <k_player_m><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>255</LINE></k_player_m>
+  <k_return><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>283</LINE></k_return>
+  <k_player_s><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>267</LINE></k_player_s>
+  <k_player_s2><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>279</LINE></k_player_s2>
+  <timer><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>297</LINE></timer>
+  <t_return><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>334</LINE></t_return>
+  <t_player1><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>319</LINE></t_player1>
+  <t_player2><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>324</LINE></t_player2>
+  <delay><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>577</LINE></delay>
+  <t_prereturn><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>329</LINE></t_prereturn>
+  <m_player1><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>366</LINE></m_player1>
+  <m_player2><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>401</LINE></m_player2>
+  <m_minute1><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>377</LINE></m_minute1>
+  <m_seconds1><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>384</LINE></m_seconds1>
+  <m_second1><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>392</LINE></m_second1>
+  <m_return><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>435</LINE></m_return>
+  <m_minute2><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>411</LINE></m_minute2>
+  <m_seconds2><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>418</LINE></m_seconds2>
+  <m_second2><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>426</LINE></m_second2>
+  <d_normal><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>462</LINE></d_normal>
+  <d_pause><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>467</LINE></d_pause>
+  <d_return><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>474</LINE></d_return>
+  <d_seconds><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>479</LINE></d_seconds>
+  <d_second><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>487</LINE></d_second>
+  <d_delay><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>619</LINE></d_delay>
+  <d_minutes><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>524</LINE></d_minutes>
+  <d_minute><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>532</LINE></d_minute>
+  <numer3><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>537</LINE></numer3>
+  <numer4><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>552</LINE></numer4>
+  <loop_seconds><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>593</LINE></loop_seconds>
+  <loop1><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>594</LINE></loop1>
+  <loop3><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>595</LINE></loop3>
+  <d_loop_seconds><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>634</LINE></d_loop_seconds>
+  <d_loop1><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>635</LINE></d_loop1>
+  <d_loop3><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>636</LINE></d_loop3>
+  <stop><FILE>H:\My Drive\Technika mikroprocesorowa\zegar_szachy\zegar_szachy\main.asm</FILE><LINE>658</LINE></stop>
+ </LABELS>
+</ASSEMBLER_INFO>
