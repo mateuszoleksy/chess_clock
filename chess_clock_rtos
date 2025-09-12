@@ -1,0 +1,76 @@
+#include <avr/io.h>
+#include <Arduino_FreeRTOS.h>  // dla Arduino AVR
+#include "task.h"
+
+// zmienne globalne
+volatile int sec = 0;
+volatile int set = 0;
+volatile long timeLeft[2][2] = {{1,0},{1,0}};
+volatile uint8_t currentPlayer = 0;
+volatile uint8_t pause = 0;
+
+// Deklaracje funkcji z Twojego kodu
+void initPorts();
+uint8_t readKeypad();
+void displayDigit(uint8_t digit, uint8_t position, uint8_t point);
+
+// ----- Tasky -----
+void taskKeypad(void *pvParameters) {
+    uint8_t key, old_key = 0;
+    for(;;) {
+        key = readKeypad();
+        // uproszczona obsługa zmiany gracza i pauzy
+        if (key == 10 && old_key != 10) {
+            currentPlayer = 1 - currentPlayer;
+            old_key = 10;
+        }
+        if (key == 3 && old_key != 3) {
+            pause = 1 - pause;
+            old_key = 3;
+        }
+        // TODO: reszta Twojej logiki przycisków
+        vTaskDelay(pdMS_TO_TICKS(50)); // odczyt klawiatury co 50 ms
+    }
+}
+
+void taskDisplay(void *pvParameters) {
+    for(;;) {
+        // Wyświetlanie czasu gracza
+        int displaySec = timeLeft[currentPlayer][1]/1000;
+        displayDigit(displaySec % 10, 1, 0);
+        displayDigit(displaySec / 10, 2, 0);
+
+        int displayMin = timeLeft[currentPlayer][0];
+        displayDigit(displayMin % 10, 4, 1);
+        displayDigit(displayMin / 10, 8, 0);
+
+        vTaskDelay(pdMS_TO_TICKS(20)); // refresh co 20 ms
+    }
+}
+
+void taskTimer(void *pvParameters) {
+    for(;;) {
+        if (!pause) {
+            if (timeLeft[currentPlayer][1] > 0)
+                timeLeft[currentPlayer][1] -= 1000;
+            else if (timeLeft[currentPlayer][0] > 0) {
+                timeLeft[currentPlayer][0] -= 1;
+                timeLeft[currentPlayer][1] = 59000;
+            }
+        }
+        vTaskDelay(pdMS_TO_TICKS(1000)); // co 1s
+    }
+}
+
+// ----- Main -----
+int main(void) {
+    initPorts();
+
+    xTaskCreate(taskKeypad, "Keypad", 128, NULL, 2, NULL);
+    xTaskCreate(taskDisplay, "Display", 128, NULL, 1, NULL);
+    xTaskCreate(taskTimer, "Timer", 128, NULL, 3, NULL);
+
+    vTaskStartScheduler(); // uruchom RTOS
+
+    for(;;); // tu nigdy nie dojdziemy
+}
